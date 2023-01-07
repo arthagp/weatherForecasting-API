@@ -4,7 +4,7 @@ const getWeatherForecast = async (cityName) => {
             method: "GET",
             headers: {
                 "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
-                "x-rapidapi-key": env.API_KEY
+                "x-rapidapi-key": env.API_KEY,
             },
         });
         const data = await response.json();
